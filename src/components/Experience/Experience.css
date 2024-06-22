@@ -1,0 +1,31 @@
+.job {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    max-width: 450px;
+    justify-content: center;
+}
+
+img {
+    height: 220px;
+    width: 220px;
+}
+
+.jobList {
+    list-style-type: circle
+}
+
+.job_image {
+    margin: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.job_image:hover {
+    transform: translateY(-7px);
+}
