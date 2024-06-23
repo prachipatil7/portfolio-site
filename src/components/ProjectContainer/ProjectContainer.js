@@ -2,6 +2,7 @@ import uniqid from 'uniqid'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import YouTubeIcon from '@material-ui/icons/YouTube'
 import DescriptionIcon from '@material-ui/icons/Description';
+import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 import './ProjectContainer.css'
 
 const ProjectContainer = ({ project }) => (
@@ -59,6 +60,18 @@ const ProjectContainer = ({ project }) => (
           rel="noreferrer"
         >
           <YouTubeIcon />
+        </a>
+      )}
+
+    {project.game && (
+        <a
+          href={project.game}
+          aria-label='live preview'
+          className='link link--icon'
+          target="_blank"
+          rel="noreferrer"
+        >
+          <VideogameAssetIcon />
         </a>
       )}
     </div>

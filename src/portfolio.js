@@ -41,6 +41,48 @@ const projects = [
     article: 'https://www.mccormick.northwestern.edu/news/articles/2023/05/student-designed-avatar-makes-public-debut-at-panel-theatrical-production-is-next/',
     video: 'https://www.youtube.com/watch?v=ojLKauINic0&ab_channel=ChicagoInnovation',
     backgroundImage: 'src/assets/avatar.png'
+  },
+  {
+    name: 'Ludobots: A Study',
+    subtitle: 'Experiment on Genetic Algorithms',
+    description:
+      'Inspired by the popular online course on evolutionary robotics, r/ludobots, I used the resulting system to run an experiment on the effects of starting morphology on fitness growth rate.',
+    callToAction: 'View the README for a detailed explanation of methodology and results.',
+    stack: ['Genetic Algorithms', 'Python', 'Physics Simulation'],
+    sourceCode: 'https://github.com/prachipatil7/genetic-algorithm-ludobots',
+    backgroundImage: 'src/assets/avatar.png'
+  },
+  {
+    name: 'Plant2.0',
+    subtitle: 'A Plant-Care Embedded System',
+    description:
+      'With a group of 4 Northwestern students, created and demonstrated a complete plant-care device including automatic watering and light intake, and light, soil moisture, temperature, and air humidity monitoring.',
+    callToAction: 'View the source code and component list in the Github link.',
+    stack: ['Embedded Systems', 'C', 'Microprocessors', 'Design'],
+    sourceCode: 'https://github.com/prachipatil7/plant-monitoring-embedded-system/tree/main?tab=readme-ov-file',
+    backgroundImage: 'src/assets/avatar.png'
+  },
+  {
+    name: 'Game: Election Day',
+    subtitle: 'LudumDare53 Game Jam',
+    description:
+      'In 48 hours, created all storyline, art, and code for a typing game called "Election Day". This was for the theme of "Delivery" and is all about proper delivery when giving an important speech.',
+    callToAction: 'Play the game, check out the submission, or view the source code below!',
+    stack: ['C#', 'Unity', 'Game Development', 'OOP'],
+    sourceCode: 'https://github.com/prachipatil7/ludumdare53?tab=readme-ov-file',
+    article: 'https://ldjam.com/events/ludum-dare/53/election-day',
+    game: 'https://prachipatil7.itch.io/election-day',
+    backgroundImage: 'src/assets/avatar.png'
+  }, 
+  {
+    name: 'Game: Colordle',
+    subtitle: 'A Color-Guessing Game',
+    description:
+      'My first-ever personal coding project, this is a Wordle inspired game for guessing the RGB values of a chosen color. Deployed using GitHub Pages',
+    callToAction: 'Play the game or look at the source code below!',
+    stack: ['Javascript', 'CSS', 'HTML'],
+    sourceCode: 'https://github.com/prachipatil7/colordle',
+    game: 'https://prachipatil7.github.io/colordle/'
   }
 ]
 
