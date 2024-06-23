@@ -29,7 +29,7 @@ const projects = [
     stack: ['Genetic Algorithms', 'LLMs', 'BERTopic'],
     sourceCode: 'https://github.com/alexsaavedraa/Prompt-Recovery-Challenge',
     article: 'https://www.kaggle.com/competitions/llm-prompt-recovery',
-    backgroundImage: 'src/assets/avatar.png'
+    backgroundImage: "/portfolio-site/assets/boxplot.png"
   },
   {
     name: 'Machine-Based Theater',
@@ -40,7 +40,7 @@ const projects = [
     stack: ['LLMs', 'JavaScript', 'Real-Time Systems'],
     article: 'https://www.mccormick.northwestern.edu/news/articles/2023/05/student-designed-avatar-makes-public-debut-at-panel-theatrical-production-is-next/',
     video: 'https://www.youtube.com/watch?v=ojLKauINic0&ab_channel=ChicagoInnovation',
-    backgroundImage: 'src/assets/avatar.png'
+    backgroundImage: "/portfolio-site/assets/avatar.png"
   },
   {
     name: 'Ludobots: A Study',
@@ -50,7 +50,7 @@ const projects = [
     callToAction: 'View the README for a detailed explanation of methodology and results.',
     stack: ['Genetic Algorithms', 'Python', 'Physics Simulation'],
     sourceCode: 'https://github.com/prachipatil7/genetic-algorithm-ludobots',
-    backgroundImage: 'src/assets/avatar.png'
+    backgroundImage: "/portfolio-site/assets/ludobot.png"
   },
   {
     name: 'Plant2.0',
@@ -60,7 +60,7 @@ const projects = [
     callToAction: 'View the source code and component list in the Github link.',
     stack: ['Embedded Systems', 'C', 'Microprocessors', 'Design'],
     sourceCode: 'https://github.com/prachipatil7/plant-monitoring-embedded-system/tree/main?tab=readme-ov-file',
-    backgroundImage: 'src/assets/avatar.png'
+    backgroundImage: "/portfolio-site/assets/plant.jpeg"
   },
   {
     name: 'Game: Election Day',
@@ -72,7 +72,7 @@ const projects = [
     sourceCode: 'https://github.com/prachipatil7/ludumdare53?tab=readme-ov-file',
     article: 'https://ldjam.com/events/ludum-dare/53/election-day',
     game: 'https://prachipatil7.itch.io/election-day',
-    backgroundImage: 'src/assets/avatar.png'
+    backgroundImage: "/portfolio-site/assets/election.png"
   }, 
   {
     name: 'Game: Colordle',
@@ -82,7 +82,8 @@ const projects = [
     callToAction: 'Play the game or look at the source code below!',
     stack: ['Javascript', 'CSS', 'HTML'],
     sourceCode: 'https://github.com/prachipatil7/colordle',
-    game: 'https://prachipatil7.github.io/colordle/'
+    game: 'https://prachipatil7.github.io/colordle/',
+    backgroundImage: "/portfolio-site/assets/colordle.png"
   }
 ]
 

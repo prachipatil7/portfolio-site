@@ -1,16 +1,25 @@
 import uniqid from 'uniqid'
+import { useState } from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub'
 import YouTubeIcon from '@material-ui/icons/YouTube'
 import DescriptionIcon from '@material-ui/icons/Description';
 import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 import './ProjectContainer.css'
 
-const ProjectContainer = ({ project }) => (
-  <div className='project'>
+function ProjectContainer({ project }) {
+  const [isHovering, setIsHovering] = useState(false);
+  return (
+  <div className='project' 
+    onMouseEnter={() => setIsHovering(true)}
+    onMouseLeave={() => setIsHovering(false)}>
     <div>
       <h3>{project.name}</h3>
       <h5>{project.subtitle}</h5>
-      <p className='project__description'>{project.description}</p>
+      { isHovering ? 
+        <img src={project.backgroundImage} alt={project.name}/> :
+        <p className='project__description'>{project.description}</p> 
+      }
+      
       <ul >
         {project?.list?.map((item) => <li>{item}</li>)}
       </ul>
@@ -78,5 +87,6 @@ const ProjectContainer = ({ project }) => (
     
   </div>
 )
+}
 
 export default ProjectContainer

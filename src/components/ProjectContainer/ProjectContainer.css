@@ -9,6 +9,12 @@
   justify-content: space-between;
 }
 
+img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
 .project:hover {
   transform: translateY(-7px);
 }
