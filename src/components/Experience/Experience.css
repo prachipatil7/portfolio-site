@@ -5,6 +5,7 @@
     align-items: right;
     max-width: 450px;
     justify-content: center;
+    
 }
 
 img {
@@ -23,7 +24,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    background-color: var(--clr-bg-alt)
 }
 
 .job_image:hover {

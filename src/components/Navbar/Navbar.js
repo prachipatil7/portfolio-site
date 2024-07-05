@@ -46,7 +46,7 @@ const Navbar = () => {
         {experience.length ? (
               <li className='nav__list-item'>
                 <a
-                  href='#education'
+                  href='#experience'
                   onClick={toggleNavList}
                   className='link link--nav'
                 >

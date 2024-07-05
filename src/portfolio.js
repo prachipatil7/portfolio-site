@@ -24,7 +24,7 @@ const projects = [
     name: 'LLM Prompt Recovery',
     subtitle: 'Gold Medalist in Google\'s Kaggle Competition',
     description:
-      'Won 13th place out of 2175 teams in  Google\'s LLM Prompt Recovery competition on Kaggle. Our strategy involved a genetic hill-climber algorithm and topic clustering to create custom attacks for each cluster.',
+      'Won 13th place out of 2175 teams in  Google\'s LLM Prompt Recovery competition on Kaggle. Our strategy involved a genetic hill-climber and topic clustering to create custom adversarial attacks.',
     callToAction: 'Check out the README for a detailed walkthrough of our process.',
     stack: ['Genetic Algorithms', 'LLMs', 'BERTopic'],
     sourceCode: 'https://github.com/alexsaavedraa/Prompt-Recovery-Challenge',
@@ -35,7 +35,7 @@ const projects = [
     name: 'Machine-Based Theater',
     subtitle: 'The Singularity Show',
     description:
-      'Put together a live improv show at Chicago\'s Annoyance theater featuring AI-powered digital actors with audio streaming, speech-to-text, LLM invocations, text-to-speech, and real-time avatar animation.',
+      'Put together a live improv show featuring AI-powered digital actors with audio streaming, speech-to-text, LLM invocations, text-to-speech, and real-time avatar animation.',
     callToAction: 'Read the article on the project below, and watch our actor lead a panel on Generative AI!',
     stack: ['LLMs', 'JavaScript', 'Real-Time Systems'],
     article: 'https://www.mccormick.northwestern.edu/news/articles/2023/05/student-designed-avatar-makes-public-debut-at-panel-theatrical-production-is-next/',
@@ -47,7 +47,7 @@ const projects = [
     subtitle: 'Experiment on Genetic Algorithms',
     description:
       'Inspired by the popular online course on evolutionary robotics, r/ludobots, I used the resulting system to run an experiment on the effects of starting morphology on fitness growth rate.',
-    callToAction: 'View the README for a detailed explanation of methodology and results.',
+    callToAction: 'View the README for the methodology and results.',
     stack: ['Genetic Algorithms', 'Python', 'Physics Simulation'],
     sourceCode: 'https://github.com/prachipatil7/genetic-algorithm-ludobots',
     backgroundImage: "/portfolio-site/assets/ludobot.png"
@@ -78,7 +78,7 @@ const projects = [
     name: 'Game: Colordle',
     subtitle: 'A Color-Guessing Game',
     description:
-      'My first-ever personal coding project, this is a Wordle inspired game for guessing the RGB values of a chosen color. Deployed using GitHub Pages',
+      'My first-ever personal coding project, this is a simple, static webpage with a Wordle-inspired game for guessing the RGB values of a chosen color. Deployed using GitHub Pages.',
     callToAction: 'Play the game or look at the source code below!',
     stack: ['Javascript', 'CSS', 'HTML'],
     sourceCode: 'https://github.com/prachipatil7/colordle',
@@ -90,7 +90,7 @@ const projects = [
 const skills = [
     {category: "Pragramming Languages", skills: ["Python", "Java", "JavaScript", "C#", "C", "HTML/CSS"]},
     {category: "Frameworks", skills: ["Springboot", "React", "Node", "FastAPI", "Flask"]},
-    {category: "AI, Machine Learning, and Data Science", skills: ["Pandas", "NumPy", "TensorFlow", "Spark", "Scikit-Learn", "MLFlow"]},
+    {category: "AI, Machine Learning, and Data Science", skills: ["Pandas", "NumPy", "TensorFlow", "Scikit-Learn", "MLFlow", "Spark", "Databricks", "SQL"]},
     {category: "DevOps", skills: ["Git", "AWS", "Azure", "Docker", "Github Actions", "Jenkins", "Terraform"]},
 ]
 const experience = [

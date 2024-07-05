@@ -19,10 +19,6 @@ function ProjectContainer({ project }) {
         <img src={project.backgroundImage} alt={project.name}/> :
         <p className='project__description'>{project.description}</p> 
       }
-      
-      <ul >
-        {project?.list?.map((item) => <li>{item}</li>)}
-      </ul>
     </div>
     <div>
       <p><br/><i>{project.callToAction}</i></p>
