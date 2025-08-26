@@ -163,6 +163,26 @@ const skills = [
     {category: "DevOps", skills: ["Git", "AWS", "Azure", "Docker", "Github Actions", "Jenkins", "Terraform"]},
 ]
 const experience = [
+     {
+     position: "Data Science Intern",
+     company: "Klaviyo - Agents & Foundations",
+     points: [
+       "Built an agentic website analysis system enabling 50% of cold-start customers for an AI marketing agent.",
+       "Incorporated automatic visual branding into a LangGraph-based email creation system.."
+     ],
+     dates: ["June 2025", "August 2025"],
+     logo: "/portfolio-site/assets/klaviyo.jpg"
+   },
+     {
+     position: "Chief Technology Officer",
+     company: "Carnegie Mellon University Startup: Gumbo",
+     points: [
+       "Led a team of 5 in building a web-agent framework for automated spreadsheet population using internet data.",
+       "Won Gebhardt Sandbox Fund and reached CMU Hack-A-Startup Competition finals."
+     ],
+     dates: ["November 2024", "July 2025"],
+     logo: "/portfolio-site/assets/gumbo.png"
+   },
   {
     position: "Software Engineer",
     company: "John Deere - Data & Analytics",
