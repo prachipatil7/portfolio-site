@@ -16,10 +16,18 @@ const About = () => {
 
       {role && (
         <h2 className='about__role'>
-          {(role && /^[aeiou]/i.test(role.trim()) ? 'A' : 'An')} {role}
+          A {role}
         </h2>
       )}
-      <p className='about__desc'>{description && description}</p>
+      <div className='about__desc'>
+        <p>I build and productionize machine learning and agentic AI systems at the cutting edge of the field.</p>
+        <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginTop: '1em', marginBottom: '1em' }}>
+          <li style={{ marginBottom: '0.5em' }}>At <strong>John Deere</strong>, I created their first agentic AI framework.</li>
+          <li style={{ marginBottom: '0.5em' }}>As <strong>co-founder & CTO of Gumbo</strong>, I led a team building an LLM-powered SaaS product.</li>
+          <li style={{ marginBottom: '0.5em' }}>At <strong>CMU</strong>, I&apos;m deepening my expertise in multimodal learning, NLP, and AI productionization.</li>
+        </ul>
+        <p>I bridge technical excellence and product development, with a belief that great AI products require both rigorous engineering and thoughtful design.</p>
+      </div>
 
       <div className='about__contact center'>
         {resume && (

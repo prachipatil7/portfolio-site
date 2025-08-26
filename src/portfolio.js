@@ -9,7 +9,7 @@ const about = {
   name: 'Prachi Patil',
   role: 'Machine Learning and AI Engineer',
   description:
-    'I am a student in the Master of Science in Artificial Intelligence and Innovation Program at Carnegie Mellon University with professional experience in building and productionizing ML and Agentic systems.',
+    'I am a Master’s student in the Artificial Intelligence and Innovation program at Carnegie Mellon University with experience building and productionizing machine learning and agentic AI systems. My work spans from creating John Deere’s first agentic AI framework to co-founding Gumbo, a SaaS startup built on LLM-powered agentic search. I bridge deep ML research and applied product development, guided by the belief that great AI products require both rigorous engineering and thoughtful design.',
   resume: 'https://drive.google.com/file/d/1UVtMqnu8_6W6eeQS7t5wvbTdKL2Kz9Bo/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/prachi-patil-swe',
@@ -157,7 +157,7 @@ const projectCategories = {
 const projects = Object.values(projectCategories).flat();
 
 const skills = [
-    {category: "Pragramming Languages", skills: ["Python", "Java", "JavaScript", "C#", "C", "HTML/CSS"]},
+    {category: "Programming Languages", skills: ["Python", "Java", "JavaScript", "C#", "C", "HTML/CSS"]},
     {category: "Frameworks", skills: ["Springboot", "React", "Node", "FastAPI", "Flask"]},
     {category: "AI, Machine Learning, and Data Science", skills: ["Pandas", "NumPy", "TensorFlow", "Scikit-Learn", "MLFlow", "Spark", "Databricks", "SQL"]},
     {category: "DevOps", skills: ["Git", "AWS", "Azure", "Docker", "Github Actions", "Jenkins", "Terraform"]},
@@ -168,7 +168,7 @@ const experience = [
      company: "Klaviyo - Agents & Foundations",
      points: [
        "Built an agentic website analysis system enabling 50% of cold-start customers for an AI marketing agent.",
-       "Incorporated automatic visual branding into a LangGraph-based email creation system.."
+       "Incorporated automatic visual branding into a LangGraph-based email creation system."
      ],
      dates: ["June 2025", "August 2025"],
      logo: "/portfolio-site/assets/klaviyo.jpg"
@@ -210,7 +210,7 @@ const experience = [
       "Collected usage metrics from company-wide cloud accounts to forecast future usage.",
       "Compared AWS purchase history with company usage to create intelligent quarterly purchase recommendations, saving thousands of dollars per quarter."
     ],
-    dates: ["June 2022", "Semptember 2023"],
+    dates: ["June 2022", "September 2022"],
     logo: "https://i.pinimg.com/originals/28/6b/4e/286b4ecc9af91eb03bee1f3d970d5aa3.jpg"
   }
 ]
