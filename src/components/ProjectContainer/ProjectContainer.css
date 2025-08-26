@@ -7,11 +7,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--clr-bg-alt)
+  background-color: var(--clr-bg-alt);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .project:hover {
   transform: translateY(-7px);
+}
+
+.project__date {
+  color: var(--clr-fg-alt);
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0.5em 0;
 }
 
 .project__description {
@@ -34,4 +43,13 @@
 
 .project .link--icon {
   margin-left: 0.5em;
+}
+
+.project__read-more {
+  margin: 1.5em 0;
+}
+
+.project__read-more .btn {
+  font-size: 0.9em;
+  padding: 0.5em 1em;
 }

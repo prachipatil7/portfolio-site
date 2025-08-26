@@ -13,12 +13,23 @@ const ScrollToTop = () => {
     return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return isVisible ? (
     <div className='scroll-top'>
-      <a href='#top' aria-label="Scroll to top">
-        
+      <button 
+        type='button'
+        onClick={scrollToTop} 
+        aria-label="Scroll to top"
+        className='scroll-top__button'
+      >
         <ArrowUpwardIcon fontSize='large' />
-      </a>
+      </button>
     </div>
   ) : null
 }

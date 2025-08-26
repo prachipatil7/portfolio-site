@@ -1,13 +1,10 @@
 import { useContext } from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
-import About from './components/About/About'
-import Projects from './components/Projects/Projects'
-import Skills from './components/Skills/Skills'
-import Experience from './components/Experience/Experience'
-import Education from './components/Education/Education'
+import Home from './pages/Home'
+import BlogPost from './components/BlogPost/BlogPost'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
-import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import './App.css'
 
@@ -15,21 +12,19 @@ const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
 
   return (
-    <div id='top' className={`${themeName} app`}>
-      <Header />
+    <Router>
+      <div id='top' className={`${themeName} app`}>
+        <Header />
 
-      <main>
-        <About />
-        <Projects />
-        <Skills />
-        <Experience/>
-        <Education/>
-        <Contact />
-      </main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project-blog/:id" element={<BlogPost />} />
+        </Routes>
 
-      <ScrollToTop />
-      <Footer />
-    </div>
+        <ScrollToTop />
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

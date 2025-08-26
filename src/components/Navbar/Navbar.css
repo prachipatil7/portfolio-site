@@ -14,6 +14,16 @@
   margin-top: 0.4em;
 }
 
+.nav__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   .nav__list {
     display: none;

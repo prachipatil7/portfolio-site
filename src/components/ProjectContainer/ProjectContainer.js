@@ -1,5 +1,6 @@
 import uniqid from 'uniqid'
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import YouTubeIcon from '@material-ui/icons/YouTube'
 import DescriptionIcon from '@material-ui/icons/Description';
@@ -15,6 +16,9 @@ function ProjectContainer({ project }) {
     <div>
       <h3>{project.name}</h3>
       <h5>{project.subtitle}</h5>
+      {project.date && (
+        <p className='project__date'>{project.date}</p>
+      )}
       { isHovering ? 
         <img src={project.backgroundImage} alt={project.name}/> :
         <p className='project__description'>{project.description}</p> 
@@ -30,6 +34,17 @@ function ProjectContainer({ project }) {
             </li>
           ))}
         </ul>
+      )}
+
+      {project.blogPost && (
+        <div className='project__read-more'>
+          <Link
+            to={`/project-blog/${project.blogPost.id}`}
+            className='btn btn--outline'
+          >
+            Read More
+          </Link>
+        </div>
       )}
 
       {project.sourceCode && (

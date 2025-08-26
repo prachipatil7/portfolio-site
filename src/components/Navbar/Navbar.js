@@ -1,4 +1,5 @@
 import { useContext, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -10,8 +11,19 @@ import './Navbar.css'
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
+  const location = useLocation()
 
   const toggleNavList = () => setShowNavList(!showNavList)
+
+  const isHomePage = location.pathname === '/'
+
+  const scrollToSection = (sectionId) => {
+    toggleNavList()
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <nav className='center nav'>
@@ -19,63 +31,75 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
-        {projects.length ? (
+        <li className='nav__list-item'>
+          <Link
+            to='/'
+            onClick={toggleNavList}
+            className='link link--nav'
+          >
+            Home
+          </Link>
+        </li>
+
+
+
+        {isHomePage && projects.length ? (
           <li className='nav__list-item'>
-            <a
-              href='#projects'
-              onClick={toggleNavList}
-              className='link link--nav'
+            <button
+              type='button'
+              onClick={() => scrollToSection('projects')}
+              className='link link--nav nav__button'
             >
               Projects
-            </a>
+            </button>
           </li>
         ) : null}
 
-        {skills.length ? (
+        {isHomePage && skills.length ? (
           <li className='nav__list-item'>
-            <a
-              href='#skills'
-              onClick={toggleNavList}
-              className='link link--nav'
+            <button
+              type='button'
+              onClick={() => scrollToSection('skills')}
+              className='link link--nav nav__button'
             >
               Skills
-            </a>
+            </button>
           </li>
         ) : null}
 
-        {experience.length ? (
+        {isHomePage && experience.length ? (
               <li className='nav__list-item'>
-                <a
-                  href='#experience'
-                  onClick={toggleNavList}
-                  className='link link--nav'
+                <button
+                  type='button'
+                  onClick={() => scrollToSection('experience')}
+                  className='link link--nav nav__button'
                 >
                   Experience
-                </a>
+                </button>
               </li>
             ) : null}
 
-        {education.length ? (
+        {isHomePage && education.length ? (
           <li className='nav__list-item'>
-            <a
-              href='#education'
-              onClick={toggleNavList}
-              className='link link--nav'
+            <button
+              type='button'
+              onClick={() => scrollToSection('education')}
+              className='link link--nav nav__button'
             >
               Education
-            </a>
+            </button>
           </li>
         ) : null}
 
-{contact.email ? (
+        {isHomePage && contact.email ? (
           <li className='nav__list-item'>
-            <a
-              href='#contact'
-              onClick={toggleNavList}
-              className='link link--nav'
+            <button
+              type='button'
+              onClick={() => scrollToSection('contact')}
+              className='link link--nav nav__button'
             >
               Contact
-            </a>
+            </button>
           </li>
         ) : null}
 

@@ -5,6 +5,22 @@
   background-color: transparent;
 }
 
+.scroll-top__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--clr-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.scroll-top__button:hover {
+  color: var(--clr-accent);
+}
+
 @media (max-width: 900px) {
   .scroll-top {
     display: none;
