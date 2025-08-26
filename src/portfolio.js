@@ -217,4 +217,7 @@ const contact = {
   email: 'pspatil@andrew.cmu.edu',
 }
 
-export { header, about, projects, projectCategories, skills, experience, education, contact }
+const blogPosts = [
+]
+
+export { header, about, projects, projectCategories, skills, experience, education, contact, blogPosts }
