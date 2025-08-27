@@ -10,7 +10,7 @@ const about = {
   role: 'Machine Learning and AI Engineer',
   description:
     'I am a Master’s student in the Artificial Intelligence and Innovation program at Carnegie Mellon University with experience building and productionizing machine learning and agentic AI systems. My work spans from creating John Deere’s first agentic AI framework to co-founding Gumbo, a SaaS startup built on LLM-powered agentic search. I bridge deep ML research and applied product development, guided by the belief that great AI products require both rigorous engineering and thoughtful design.',
-  resume: 'https://drive.google.com/file/d/1UVtMqnu8_6W6eeQS7t5wvbTdKL2Kz9Bo/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/10-067FhYY94yfzJWesL9AES01fIGoSPq/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/prachi-patil-swe',
     github: 'https://github.com/prachipatil7',
