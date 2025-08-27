@@ -157,9 +157,10 @@ const projectCategories = {
 const projects = Object.values(projectCategories).flat();
 
 const skills = [
+    {category: "AI/MLOps", skills: ["Pytorch", "Tensorflow", "LangGraph", "Weights & Biases", "MLFlow"]},
     {category: "Programming Languages", skills: ["Python", "Java", "JavaScript", "C#", "C", "HTML/CSS"]},
     {category: "Frameworks", skills: ["Springboot", "React", "Node", "FastAPI", "Flask"]},
-    {category: "AI, Machine Learning, and Data Science", skills: ["Pandas", "NumPy", "TensorFlow", "Scikit-Learn", "MLFlow", "Spark", "Databricks", "SQL"]},
+    {category: "Data Analysis", skills: ["Pandas", "NumPy", "Scikit-Learn", "Spark", "Databricks", "SQL"]},
     {category: "DevOps", skills: ["Git", "AWS", "Azure", "Docker", "Github Actions", "Jenkins", "Terraform"]},
 ]
 const experience = [
@@ -168,7 +169,7 @@ const experience = [
      company: "Klaviyo - Agents & Foundations",
      points: [
        "Built an agentic website analysis system enabling 50% of cold-start customers for an AI marketing agent.",
-       "Incorporated automatic visual branding into a LangGraph-based email creation system."
+       "Personalized agent-created emails with visual branding information from customer websites."
      ],
      dates: ["June 2025", "August 2025"],
      logo: "/portfolio-site/assets/klaviyo.jpg"
@@ -178,7 +179,7 @@ const experience = [
      company: "Carnegie Mellon University Startup: Gumbo",
      points: [
        "Led a team of 5 in building a web-agent framework for automated spreadsheet population using internet data.",
-       "Won Gebhardt Sandbox Fund and reached CMU Hack-A-Startup Competition finals."
+       "Won the Gebhardt Sandbox Fund and reached CMU Hack-A-Startup Competition finals."
      ],
      dates: ["November 2024", "July 2025"],
      logo: "/portfolio-site/assets/gumbo.png"
@@ -188,7 +189,7 @@ const experience = [
     company: "John Deere - Data & Analytics",
     points: [
       "Developed and productionized LLM systems to aid data exploration and hyper-personalized marketing",
-      "Worked on recommendation algorithms to cultivate personalized eCommerce experiences."
+      "Worked on recommendation algorithms to cultivate personalized eCommerce experiences, earning the Global IT Innovation Award."
     ],
     dates: ["August 2023", "Present"],
     logo: "https://i.pinimg.com/originals/28/6b/4e/286b4ecc9af91eb03bee1f3d970d5aa3.jpg"

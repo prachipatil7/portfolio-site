@@ -24,9 +24,9 @@ const About = () => {
           <div className='about__desc'>
             <p>I build and productionize machine learning and agentic systems at the cutting edge of AI.</p>
             <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginTop: '1em', marginBottom: '1em' }}>
-              <li style={{ marginBottom: '0.5em' }}>At <strong>John Deere</strong>, I created their first agentic AI framework.</li>
-              <li style={{ marginBottom: '0.5em' }}>As <strong>co-founder & CTO of Gumbo</strong>, I led a team building an LLM-powered SaaS product.</li>
-              <li style={{ marginBottom: '0.5em' }}>At <strong>CMU</strong>, I&apos;m deepening my expertise in multimodal learning, NLP, and AI productionization.</li>
+              <li style={{ marginBottom: '0.5em' }}>At <strong>John Deere</strong>, I developed their first agentic AI application and extendable agent framework.</li>
+              <li style={{ marginBottom: '0.5em' }}>As <strong>co-founder & CTO of Gumbo</strong>, I led the development of a novel web-agent platform that can create any spreadsheet from the internet.</li>
+              <li style={{ marginBottom: '0.5em' }}>At <strong>Carnegie Mellon University</strong>, I&apos;m a Master&apos;s student deepening my expertise even further in ML, NLP, and Multimodal AI.</li>
             </ul>
             <p>I bridge technical excellence and product development, with a belief that great AI products require both rigorous engineering and thoughtful design.</p>
           </div>
