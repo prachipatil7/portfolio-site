@@ -31,11 +31,11 @@ const projectCategories = {
     },
     {
       name: 'In-Context Learning for Web Agents',
-      subtitle: 'Adaptive Navigation Framework',
+      subtitle: 'Adaptive WebArena Navigation',
       description:
         'Developed a novel in-context learning framework that enables web agents to improve navigation by persistently updating a guidebook of strategies, boosting benchmark performance over standard prompting baselines.',
       // callToAction: 'Learn about the adaptive web agent framework.',
-      stack: ['LLMs', 'In-Context Learning', 'Web Agents', 'Reinforcement Learning'],
+      stack: ['LLMs', 'In-Context Learning', 'Web Agents', 'WebArena'],
       date: 'May 2025',
       backgroundImage: "/portfolio-site/assets/webarena.png"
     },
@@ -48,6 +48,16 @@ const projectCategories = {
       stack: ['Adversarial ML', 'Computer Vision', 'CLIP', 'Security Research'],
       date: 'May 2025',
       backgroundImage: "/portfolio-site/assets/clip-adversarial.jpg"
+    },
+    {
+      name: 'Voice-Based Navigation Assistant',
+      subtitle: 'TartanHacks 2025 Weekend Project',
+      description:
+        'Developed a voice-based navigation assistant that uses LLMs and landmark-based navigation to guide users while driving, enabling hands-free navigation and reducing driver distraction.',
+      stack: ['LLMs', 'Voice-Agents', 'Websockets', 'Google Maps API'],
+      date: 'Feb 2025',
+      backgroundImage: "/portfolio-site/assets/passenger_princess.png",
+      sourceCode: 'https://github.com/prachipatil7/tartanhacks-2025'
     },
     {
       name: 'LLM Prompt Recovery',
